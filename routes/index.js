@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/data',  function(req, res, next){
   var responses = ['Awesome', 'Great', 'Bad', 'So-so'];
-  res.json(responses[parseInt(Math.random()*responses.length)]);
+  res.send(responses[parseInt(Math.random()*responses.length)]);
 })
 
 module.exports = router;
